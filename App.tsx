@@ -5,6 +5,7 @@ import {
   Text,
 } from 'react-native';
 
+
 const App: React.ElementType = () => {
 
   return (
