@@ -5,7 +5,7 @@ import base from '../styles/base';
 
 interface IUserLoginProps {}
 
-const UserLogin: React.FunctionComponent<IUserLoginProps> = (props) => {
+const UserLogin: React.FunctionComponent<IUserLoginProps> = (navigation) => {
     return (
         <View style={base.root}>
             <Title>User Login</Title>

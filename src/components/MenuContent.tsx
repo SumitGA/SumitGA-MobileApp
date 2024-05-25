@@ -4,7 +4,7 @@ import {
   DrawerContentScrollView,
   DrawerItemList,
 } from '@react-navigation/drawer';
-
+import base from '../styles/base';
 import {Image} from 'react-native';
 
 const MenuContent: React.FunctionComponent<DrawerContentComponentProps> = (
@@ -12,13 +12,14 @@ const MenuContent: React.FunctionComponent<DrawerContentComponentProps> = (
 ) => {
   return (
     <DrawerContentScrollView {...props}>
-      <Image
+      <Image 
+        style={base.bannerImage}
         resizeMode='cover'
-        style={{width: '100%', height: 140}}
-        // source={require('../assets/drawerHeaderImage.jpg')}
+        source={require('../../assets/images/drawerHeader.jpeg')}
       />
       <DrawerItemList {...props} />
     </DrawerContentScrollView>
   );
 };
+
 export default MenuContent;
